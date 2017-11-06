@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name=s"viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+      
+      <form action="index.html" method="post">
+        <h1>Sign Up</h1>
+        
+        
+        <fieldset>
+          <legend><span class="number">1</span>Your basic info</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name">
+        
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" name="user_mail">
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="user_password">
+          
+          
+          
+          <label>Age:</label>
+          <input type="radio" id="under_!3" value="under_13" name="user_age">
+          <label for="under_13" class="light">Under 13</label><br>
+          
+          <input type="radio" id="over_!3" value="over_13" name="user_age">
+          <label for="over_13" class="light">Over 13</label>
+          
+          
+        </fieldset>
+        <fieldset>
+          
+           <legend><span class="number">2</span>Your Profile</legend>
+        <label for="bio">Bio:</label>
+        <textarea id="bio" name="user_bio"></textarea>
+          <label for="job">Job role:</label>
+          
+          <select id="job" name="user_job">
+            <optgroup label="web">
+            <option value="frontend_developer">Front-End Developer</option>
+            <option value="java_developer">Java Developer</option>
+            <option value="python_developer">Python Developer</option>
+            <option value="ruby_developer">Ruby-End Developer</option>
+            <option value="rail_developer">Rail Developer</option>
+            <option value="wordpress_developer">Wordpress Developer</option>
+            </optgroup>
+            
+            
+            <optgroup label="mobile">
+            <option value="android_developer">Android Developer</option>
+            <option value="ios_developer">Ios Developer</option>
+            <option value="ui_developer">Ui Developer</option>
+            </optgroup>
+            
+            <optgroup label="Business">
+            <option value="business_owner">Business Owner</option>
+            <option value="marketing_manager">Marketing Officer</option>
+            <option value="seles_manager">Seles Manager</option>
+            <option value="product_developer">Product Developer</option>
+            </optgroup>
+            
+           </select>
+          <label>Interests:</label>
+          
+          <input type="checkbox" id="development" value="intrest_development" name="user_interest">
+          <label class="light" for="development">Development</label><br>
+          
+          <input type="checkbox" id="design" value="intrest_design" name="user_interest">
+          <label class="light" for="design">Development</label><br>
+          
+          <input type="checkbox" id="business" value="intrest_business" name="user_interest">
+          <label class="light" for="business">Business</label><br>
+          
+          
+        <button type="submit"> Sign Up </button>
+        </fieldset>
+        
+  
+      </form>
+      
+      
+    </body>
+</html>
